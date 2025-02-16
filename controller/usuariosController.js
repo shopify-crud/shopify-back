@@ -3,7 +3,7 @@ export const getAll = async (req, res) => {
     const usuarios = await usuariosRepository.getAll();
     res
       .status(200)
-      .json({ message: "Usuários retornados com sucesso!", data: usuarios });
+      .json({ message: "Usuários retornados com êxito!", data: usuarios });
   } catch (err) {
     console.error(err);
     res
