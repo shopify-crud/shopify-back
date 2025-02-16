@@ -1,3 +1,5 @@
+import * as usuariosRepository from '../repository/usuariosRepository.js';
+
 export const getAll = async (req, res) => {
   try {
     const usuarios = await usuariosRepository.getAll();
